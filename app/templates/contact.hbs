@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Contact Page</h1>
+            <div class="form-horizontal form-group form-group-lg ">
+                <div class="form-group">
+                    {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+                </div>
+                <div class="form-group">
+                    {{input type="text" value=message class="form-control" placeholder="Please enter in a message"}}
+                </div>
+                <button disabled={{isDisabled}} {{action 'sendMessage'}} class="btn btn-primary btn-lg">Request invitation</button>
+            </div>
+        </div>
+    </div>
+</div>
+  {{#if responseMessage}}
+  <div class="alert alert-success">{{responseMessage}}</div>
+  {{/if}}
