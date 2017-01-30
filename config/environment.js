@@ -1,20 +1,20 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'library-app',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
 
-     firebase: {
-    apiKey: "AIzaSyA-5rZIUQ2ta98UgK2F3kkLdVBSABZPK58",
-    authDomain: "library-app-a48bb.firebaseapp.com",
-    databaseURL: "https://library-app-a48bb.firebaseio.com",
-    storageBucket: "library-app-a48bb.appspot.com",
-    messagingSenderId: "394615648463"
+    firebase: {
+      apiKey: "AIzaSyA-5rZIUQ2ta98UgK2F3kkLdVBSABZPK58",
+      authDomain: "library-app-a48bb.firebaseapp.com",
+      databaseURL: "https://library-app-a48bb.firebaseio.com",
+      storageBucket: "library-app-a48bb.appspot.com",
+      messagingSenderId: "394615648463"
     },
-    
+
 
     EmberENV: {
       FEATURES: {

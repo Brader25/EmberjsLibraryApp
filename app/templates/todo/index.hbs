@@ -1,0 +1,21 @@
+<h2>List</h2>
+<div class="row">
+  {{#each model as |todo|}}
+  <div class="col-md-4">
+    <div class="panel panel-default library-item">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{todo.name}}</h3>
+      </div>
+      <div class="panel-body">
+        <p>Task: {{todo.task}}</p>
+        <p>Complete: {{todo.isComplete}}</p>
+      </div>
+      <div class="panel-footer text-right">
+        {{#unless todo.isComplete}}
+        <button class="btn btn-success btn-xs" {{action 'markComplete' todo}}>Task Complete</button> {{/unless}}
+        <button class="btn btn-danger btn-xs" {{action 'deleteTodo' todo}}>Delete</button>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

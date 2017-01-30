@@ -3,9 +3,9 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
     message: '',
     emailAddress: '',
-    isDisabled: Ember.computed('emailAddress', 'message', function() {
-        if(this.emailAddress.includes('@') && this.message.length > 5){
-            return false
+    isDisabled: Ember.computed('emailAddress', 'message', function () {
+        if (this.emailAddress.includes('@') && this.message.length > 5) {
+            return false;
         } else {
             return true;
         }
